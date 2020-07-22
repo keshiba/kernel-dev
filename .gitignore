@@ -1,3 +1,9 @@
 build
 bin
+*.swp
 
+
+
+#Added by cargo
+
+/target

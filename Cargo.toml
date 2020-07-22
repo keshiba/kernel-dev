@@ -1,0 +1,20 @@
+[package]
+name = "helloworld"
+version = "0.1.0"
+authors = ["keshiba <imkeshiba@gmail.com>"]
+edition = "2018"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[package.metadata.bootimage]
+build-command = ["xbuild"]
+
+[dependencies]
+bootloader = "0.6.4"
+rlibc = "1.0.0"
