@@ -15,19 +15,18 @@ fn panic(_info: &PanicInfo) -> ! {
     unsafe { intrinsics::abort() }
 }
 
-static HELLOWORLD: &[u8] = b"Hey Keshiba";
-
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
 
     let vga_buffer = 0xb8000 as *mut u8;
 
-    for (i, &byte) in HELLOWORLD.iter().enumerate() {
-        
+    for i in 1..255 {
+
         unsafe {
-            *vga_buffer.offset(i as isize * 2) = byte;
-            *vga_buffer.offset(i as isize * 2 + 1) = 0xb;
+            *vga_buffer.offset(i as isize * 2) = ('A' as u8) + ((i - 1) % 26);
+            *vga_buffer.offset(i as isize * 2 + 1) = 0x1 + i;
         }
+
     }
 
     loop { }
