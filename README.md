@@ -17,3 +17,4 @@ For now, cross compilation seems to be working only for nightly-2020-05-09-x86_6
 
 ### Helloworld Done
 ![Helloworld Demo](https://github.com/keshiba/kernel-dev/raw/kernel-rust/screenshots/helloworld.png)
+![Text with colors](https://github.com/keshiba/kernel-dev/raw/kernel-rust/screenshots/text_colors.png)
