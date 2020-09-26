@@ -1,6 +1,6 @@
 #### Nothing to see here! :warning:
 
-#### Just a programmer trying to satisfy his carnal :fire: urge to go bare metal and develop a operating system :star:
+#### Just a programmer trying to satisfy his carnal :fire: urge to go bare metal and develop an operating system :star:
 
 #### To achieve enlightenment :church: and follow the path of many great programmers before him :stars:
 
